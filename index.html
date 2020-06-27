@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 Website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- A Navbar Component -->
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <svg
+            width="3rem"
+            height="3rem"
+            viewBox="0 0 16 16"
+            class="bi bi-bootstrap"
+            fill="#e25563"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 1H4a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zM4 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4H4z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M8.537 12H5.062V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396zM6.375 4.658v2.467h1.558c1.16 0 1.764-.428 1.764-1.23 0-.78-.569-1.237-1.541-1.237H6.375zm1.898 6.229H6.375V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"
+            />
+          </svg>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container mt-5 mt-md-10">
+      <div
+        class="row justify-content-between align-items-center flex-column flex-md-row"
+      >
+        <div class="col-md-5 mb-5 mb-md-0">
+          <h2 class="font-weight-bold">Bootstrap 5 Alpha is Out!</h2>
+          <p class="my-4">
+            This is just a simple web page created using Bootstrap 5. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Inventore commodi
+            facere voluptate molestias sit exercitationem voluptatem nihil!
+          </p>
+          <a class="btn btn-outline-primary btn-block" href="#projects"
+            >Read More</a
+          >
+        </div>
+
+        <div class="col-md-5">
+          <img src="./assets/logo.png" class="w-100" alt="Bootstrap" />
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <h2 class="text-center mt-10 mb-5">Our Projects</h2>
+      <div
+        class="row row-cols-md-2 row-cols-1 row-cols-lg-3 g-4 cursor-pointer project-img"
+        id="projects"
+      >
+        <div class="col">
+          <img
+            src="./assets/nature.jpg"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            class="w-100"
+            alt="Project"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="./assets/nature.jpg"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            class="w-100"
+            alt="Project"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="./assets/nature.jpg"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            class="w-100"
+            alt="Project"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="./assets/nature.jpg"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            class="w-100"
+            alt="Project"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="./assets/nature.jpg"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            class="w-100"
+            alt="Project"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="./assets/nature.jpg"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            class="w-100"
+            alt="Project"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for projects -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Project</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/nature.jpg" alt="Project" class="w-100 mb-4" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in
+              harum cum. Eveniet rem eum fugiat ratione libero placeat enim!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Services Section -->
+      <!-- Cards for Services -->
+      <h2 class="text-center mt-10 mb-5">Our Services</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title mb-3">Web Development</h3>
+              <p class="card-text mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Sapiente consequatur illo tempora qui iste veniam a eos sint
+                quae impedit!
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-block"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title mb-3">Graphic Designing</h3>
+              <p class="card-text mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Sapiente consequatur illo tempora qui iste veniam a eos sint
+                quae impedit!
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-block"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title mb-3">DevOps</h3>
+              <p class="card-text mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Sapiente consequatur illo tempora qui iste veniam a eos sint
+                quae impedit!
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-block"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container">
+      <h2 class="text-center mt-10 mb-5">Contact</h2>
+
+      <div class="row justify-content-center">
+        <form class="col-md-8">
+          <div class="input-group mb-3">
+            <span class="input-group-text">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-person"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                />
+              </svg>
+            </span>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Name"
+            />
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-envelope"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+                />
+              </svg>
+            </span>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label"> Your Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Message..."
+            ></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-block font-weight-bold">
+            SEND
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-4 pb-3 text-center mt-5">
+      <div class="container">
+        <p>
+          Built by
+          <a href="https://portfolio-543bf.firebaseapp.com/" target="_blank"
+            >Shahmir Faisal</a
+          >
+        </p>
+        <p>&copy; Copyright. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap.js -->
+    <!-- JavaScript and dependencies -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
